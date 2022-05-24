@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  padding: 2% 5%;
+}
+
+input, button, .chatbox {
+  border: 1px solid #dadada !important;
+}
+
+input {
+  padding: 7px 10px;
+}
+
+.chatbox {
+  width: 350px;
+  height: 250px;
+  min-height: 200px;
+  border: 1px solid #333;
+  border-radius: 3px;
+  overflow-y: scroll;
+}
+.chatbox p {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+}
+.chatbox p span {
+  padding: 5px 12px;
+}
+.chatbox p span.name-display {
+  position: relative;
+  padding-left: 15px;
+  overflow-x: hidden;
+  white-space: no-wrap;
+  text-overflow: ellipsis;
+}
+.chatbox p span.name-display:after {
+  content: "-";
+  position: absolute;
+  right: 0;
+  top: 4px;
+  bottom: 0;
+  margin: auto 0;
+  background: #fff;
+  padding-left: 3px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+}
+form input {
+  margin-top: 5px;
+  outline: none;
+}
+form input#username {
+  background: #eee;
+  border: 1px solid #555;
+}
+form #chat-submit {
+  padding: 9px 10px;
+  margin-top: 5px;
+  background: #81ed56;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+form #chat-submit:hover {
+  background: #5fe828;
+}
+
+/*# sourceMappingURL=style.css.map */
